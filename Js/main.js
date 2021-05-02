@@ -38,7 +38,7 @@ let colsParent = document.getElementById("colsParent");
 // function to fetch the api
 async function getData(region) {
     
-    let weatherData = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=4985eed44d6441bf9db64515210105&q=${region}&days=7`);
+    let weatherData = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=4985eed44d6441bf9db64515210105&q=${region}&days=7`);
     let convertData = await weatherData.json();
 
 
@@ -224,18 +224,18 @@ function displayData() {
 
 
         <div class="col-md-4 ">
-            <div class="item2  ">
+            <div class="item3  ">
                 <div class="date-day-cont text-center px-2 py-1 " >
                     <h6>${allDaysWeatherData[2].weekDayName}</h6>
                 </div>
                 <div class="degree-details py-5 d-flex flex-column align-items-center" >
                 
                     <div class="img-continer text-center w-50">
-                        <img src="https:${allDaysWeatherData[2].weatherIcon}" alt="" class="h-75">
+                        <img src="https:${allDaysWeatherData[2].weatherIcon}" alt="" class="w-25">
                     </div>
 
-                    <div class="degree my-2  text-center">
-                        <span class="d-block mt-2 spn1">${allDaysWeatherData[2].maxTemp}<sup>o</sup>C</span>
+                    <div class="degree my-3 text-center">
+                        <span class="d-block mt-3 spn1">${allDaysWeatherData[2].maxTemp}<sup>o</sup>C</span>
                         <span class="d-block mt-2 mb-3 spn2"> ${allDaysWeatherData[2].minTemp}<sup>o</sup></span>
 
                     </div>
@@ -246,6 +246,13 @@ function displayData() {
         </div>
 
     `;
+
+
+    /* 
+    
+    
+    
+    */
 
 
      colsParent.innerHTML = box;
