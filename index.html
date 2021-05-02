@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+
+    <link rel="icon" href="Img/weather icon.png">
+    <title>Weather APP</title>
+
+</head>
+
+<body>
+
+
+    
+
+    <!-- nav-bar section -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark py-5  ">
+        <div class="container">
+            <a class="navbar-brand logo " href="#">
+                <img src="Img/logo.png" alt="">
+
+                <div class="logo-items">
+                    <h1 class="font-weight-bold">Weather App</h1>
+                    <small>tagline goes here</small>
+                </div>
+
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active mx-2">
+                        <a class="nav-link home " href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active mx-2">
+                        <a class="nav-link all" href="#">News <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active mx-2">
+                        <a class="nav-link all " href="#">Live cameras <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active mx-2 ">
+                        <a class="nav-link all" href="#">Photos<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active ml-2 ">
+                        <a class="nav-link all" href="#">Contact<span class="sr-only">(current)</span></a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- body section -->
+    <section class="body pb-4 pt-5">
+        <div class="container">
+            <div class="searchContainer rounded-pill">
+                <input type="text" id="searchInput" class="searchInput form-control rounded-pill" placeholder="Enter Your Location..." >
+                <button class="btn btn-primary rounded-pill ">Find</button>
+            </div>
+
+        </div>
+
+        <div class="container mt-5 py-3">
+            <div class="row no-gutters " id="colsParent">
+                <div class="col-md-4  ">
+                    <div class="item">
+                        <div class="date-day-cont d-flex justify-content-between px-2 py-1 " >
+                            <h6>Friday</h6>
+                            <h6>30April</h6>
+
+                        </div>
+                        <div class="degree-details py-4 px-3">
+                            <h5>Cairo</h5>
+                            <div class="degree my-3 d-flex  align-items-center">
+                                <span >24<sup>o</sup>C</span>
+                                <div class="img-continer text-center">
+                                    <img src="Img/Zamalek.jpg" alt="" class="w-25">
+                                </div>
+                               
+                            </div>
+                            <span class="text-primary">Sunny</span>
+                            <ul class="case list-unstyled d-flex justify-content-between mt-4">
+                                <li><img src="Img/icon-umberella.png" alt="" title="Humidity"> <span >20%</span></li>
+                                <li><img src="Img/icon-wind.png" alt=""> <span>18km/h </span></li>
+                                <li><img src="Img/icon-compass.png" alt=""> <span>East</span></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">
+                    <div class="item2  ">
+                        <div class="date-day-cont text-center px-2 py-1 " >
+                            <h6>Saturday</h6>
+                        </div>
+                        <div class="degree-details py-5 d-flex flex-column align-items-center" >
+                           
+                            <div class="img-continer text-center w-50">
+                                <img src="Img/Zamalek.jpg" alt="" class="w-25">
+                            </div>
+
+                            <div class="degree my-3">
+                                <span class="d-block mt-3 spn1">24<sup>o</sup>C</span>
+                                <span class="d-block mt-2 mb-3 spn2">24.5<sup>o</sup></span>
+
+                            </div>
+
+                            <span class="text-primary">Sunny</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">
+                    <div class="item3  ">
+                        <div class="date-day-cont text-center px-2 py-1 " >
+                            <h6>Sunday</h6>
+                        </div>
+                        <div class="degree-details py-5 d-flex flex-column align-items-center" >
+                           
+                            <div class="img-continer text-center w-50">
+                                <img src="Img/Zamalek.jpg" alt="" class="w-25">
+                            </div>
+
+                            <div class="degree my-3">
+                                <span class="d-block mt-3 spn1">24<sup>o</sup>C</span>
+                                <span class="d-block mt-2 mb-3 spn2">24.5<sup>o</sup></span>
+
+                            </div>
+
+                            <span class="text-primary">Sunny</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer section -->
+    <footer class="py-5"> 
+        <div class="container text-center">
+            <div class="row mt-3 mb-5">
+                <div class="col-md-8 ">
+                    <div class="input-cont">
+                        <div class="searchContainer rounded-pill">
+                            <input type="text" id="searchInput" class="searchInput form-control rounded-pill" placeholder="Enter Your Email To Subscribe..." >
+                            <button class="btn btn-primary rounded-pill" id="searchButton">Subscribe</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+                    <div class="socialMedia-cont">
+                        <ul class="list-unstyled d-flex justify-content-center align-items-center ">
+                            <li class="one"><i class="fab fa-facebook-f fa-2x"></i></li>
+                            <li class="two"><i class="fab fa-twitter fa-2x"></i></li>
+                            <li class="three"><i class="fab fa-google-plus-g fa-2x"></i></li>
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+            <span class="lead" >Copyright &copy; 2021 Designed by Omar Abdul-Khalek. All rights reserved</span>
+        </div>
+
+       
+    </footer>
+
+
+
+    <script src="Js/jquery-3.5.1.slim.min.js"></script>
+    <script src="Js/popper.min.js"></script>
+    <script src="Js/bootstrap.min.js"></script>
+    <script src="Js/main.js"></script>
+</body>
+
+</html>
